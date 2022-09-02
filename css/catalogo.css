@@ -1,0 +1,136 @@
+.titulo{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+span{
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+.titulo img{
+    width: 70%;
+    height: auto;
+}
+
+.container-catalogo{
+    background: rgb(229, 255, 255);
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.catalogo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    gap: 35px;
+    
+}
+
+.tarjeta{
+    background: rgb(229, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.presentacion{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tarjeta #nombre{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    width: 70%;
+}
+
+
+.tarjeta p{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: none;
+}
+
+.catalogo img{
+    max-width: 90%;
+    transition: all 300ms;
+    position: relative;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+#Boton{
+    font-size: 15px;
+    width: 80%;
+    height: 2.7rem; 
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(176, 176, 176);
+    font-family: monospace;
+}
+
+#Boton:hover{
+    cursor: pointer;
+    background-color: rgb(156, 156, 156);
+}
+
+@media (max-width:850px){
+
+    .menu {
+        z-index: 2;
+    }
+
+    .titulo img{
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .menu {
+        z-index: 2;
+    }
+
+    .catalogo{
+        display: grid;
+    }
+
+    .tarjeta{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+
+    .titulo img{
+        width: 90%;
+        height: auto;
+    }
+
+    .presentacion img{
+        width: 60%;
+    }
+
+}
